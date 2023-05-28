@@ -8,7 +8,7 @@ set container name cloudflare-ddns allow-host-networks
 set container name cloudflare-ddns environment CF_API_TOKEN value "${SECRET_CLOUDFLARE_DYNDNS_TOKEN}"
 set container name cloudflare-ddns environment DOMAINS value 'ipv4.schorgers.nl,ipv4.bjw-s.tech,ipv4.bjw-s.dev,ipv4.bjws.nl'
 set container name cloudflare-ddns environment IP6_PROVIDER value "none"
-set container name cloudflare-ddns environment TZ value 'Europe/Amsterdam'
+set container name cloudflare-ddns environment TZ value 'America/New_York'
 set container name cloudflare-ddns environment PGID value "1000"
 set container name cloudflare-ddns environment PUID value "1000"
 set container name cloudflare-ddns image 'docker.io/favonia/cloudflare-ddns:1.9.2'
@@ -33,7 +33,7 @@ set container name bind volume cache mode 'rw'
 
 # dnsdist
 set container name dnsdist cap-add 'net-bind-service'
-set container name dnsdist environment TZ value 'Europe/Amsterdam'
+set container name dnsdist environment TZ value 'America/New_York'
 set container name dnsdist image 'docker.io/powerdns/dnsdist-18:1.8.0'
 set container name dnsdist arguments '--log-timestamps'
 set container name dnsdist memory '0'
@@ -43,18 +43,6 @@ set container name dnsdist shared-memory '0'
 set container name dnsdist volume config source '/config/containers/dnsdist/config/dnsdist.conf'
 set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config mode 'ro'
-
-# blocky
-set container name blocky cap-add 'net-bind-service'
-set container name blocky environment TZ value 'Europe/Amsterdam'
-set container name blocky image 'ghcr.io/0xerr0r/blocky:v0.21'
-set container name blocky memory '0'
-set container name blocky network containers address '10.5.0.7'
-set container name blocky restart 'on-failure'
-set container name blocky shared-memory '0'
-set container name blocky volume config source '/config/containers/blocky/config/config.yaml'
-set container name blocky volume config destination '/app/config.yml'
-set container name blocky volume config mode 'ro'
 
 # haproxy-k8s-api
 set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.7.8'
@@ -118,24 +106,9 @@ set container name udp-broadcast-relay-sonos memory '0'
 set container name udp-broadcast-relay-sonos restart 'on-failure'
 set container name udp-broadcast-relay-sonos shared-memory '0'
 
-# unifi
-set container name unifi environment RUNAS_UID0 value 'false'
-set container name unifi environment TZ value 'Europe/Amsterdam'
-set container name unifi environment UNIFI_GID value '999'
-set container name unifi environment UNIFI_STDOUT value 'true'
-set container name unifi environment UNIFI_UID value '999'
-set container name unifi image 'ghcr.io/jacobalberty/unifi-docker:v7.3.83'
-set container name unifi memory '0'
-set container name unifi network containers address '10.5.0.10'
-set container name unifi restart 'on-failure'
-set container name unifi shared-memory '0'
-set container name unifi volume data source '/config/containers/unifi'
-set container name unifi volume data destination '/unifi'
-set container name unifi volume data mode 'rw'
-
 # onepassword-connect
 set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.0'
-set container name onepassword-connect environment TZ value 'Europe/Amsterdam'
+set container name onepassword-connect environment TZ value 'America/New_York'
 set container name onepassword-connect memory '0'
 set container name onepassword-connect network containers address '10.5.0.5'
 set container name onepassword-connect shared-memory '0'
@@ -148,7 +121,7 @@ set container name onepassword-connect volume data mode 'rw'
 
 # onepassword-sync
 set container name onepassword-sync image 'docker.io/1password/connect-sync:1.7.0'
-set container name onepassword-sync environment TZ value 'Europe/Amsterdam'
+set container name onepassword-sync environment TZ value 'America/New_York'
 set container name onepassword-sync memory '0'
 set container name onepassword-sync shared-memory '0'
 set container name onepassword-sync network containers address '10.5.0.6'
