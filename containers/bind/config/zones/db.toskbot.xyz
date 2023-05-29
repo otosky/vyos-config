@@ -1,3 +1,4 @@
+; vim: filetype=bindzone
 ; Make sure to update the epoch time in the SOA records so coreDNS picks up the changes automatically
 ; https://www.epochconverter.com/
 
