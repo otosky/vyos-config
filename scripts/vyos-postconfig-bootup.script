@@ -10,8 +10,8 @@ tee /home/vyos/.gitconfig <<END >/dev/null
 [safe]
   directory = /config
 [user]
-  email = me@bjw-s.dev
-  name = Bernd Schorgers
+  email = olivertosky@gmail.com
+  name = Oliver Tosky
 END
 
 tee -a /home/vyos/.bash_aliases <<END >/dev/null

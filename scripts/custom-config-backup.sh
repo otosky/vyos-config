@@ -12,14 +12,7 @@ if mountpoint -q $dest; then
     if [ ! -d "$backup_dest" ]; then
         mkdir "$backup_dest"
     fi
-    tar --exclude="overlay*" --exclude="unifi*" -zvcf "$backup_dest/config.$(date +%Y%m%d%H%M%S).tar.gz" /config
-
-    # Unifi backups
-    backup_dest="$dest/unifi"
-    if [ ! -d "$backup_dest" ]; then
-        mkdir "$backup_dest"
-    fi
-    rsync -r /config/containers/unifi/data/backup/autobackup/ "$backup_dest"
+    tar --exclude="overlay*" -zvcf "$backup_dest/config.$(date +%Y%m%d%H%M%S).tar.gz" /config
 
     # Delete backups older than 1 month
     find $dest -type f -mtime +30 -delete
