@@ -17,11 +17,6 @@ set firewall name local-iot rule 2 description 'Rule: accept_mdns'
 set firewall name local-iot rule 2 destination port 'mdns'
 set firewall name local-iot rule 2 protocol 'udp'
 set firewall name local-iot rule 2 source port 'mdns'
-set firewall name local-iot rule 3 action 'accept'
-set firewall name local-iot rule 3 description 'Rule: accept_discovery_from_sonos_controllers'
-set firewall name local-iot rule 3 destination port '1900,1901,1902,57621'
-set firewall name local-iot rule 3 protocol 'udp'
-set firewall name local-iot rule 3 source group address-group 'sonos_controllers'
 
 # From LOCAL to LAN
 set firewall name local-lan default-action 'drop'
@@ -70,11 +65,6 @@ set firewall name local-trusted rule 2 description 'Rule: accept_mdns'
 set firewall name local-trusted rule 2 destination port 'mdns'
 set firewall name local-trusted rule 2 protocol 'udp'
 set firewall name local-trusted rule 2 source port 'mdns'
-set firewall name local-trusted rule 3 action 'accept'
-set firewall name local-trusted rule 3 description 'Rule: accept_discovery_from_sonos_players'
-set firewall name local-trusted rule 3 destination port '1900,1901,1902'
-set firewall name local-trusted rule 3 protocol 'udp'
-set firewall name local-trusted rule 3 source group address-group 'sonos_players'
 
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'
