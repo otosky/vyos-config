@@ -1,10 +1,11 @@
+; vim: filetype=bindzone
 ; Make sure to update the epoch time in the SOA records so coreDNS picks up the changes automatically
 ; https://www.epochconverter.com/
 
 ; SOA Records
 $TTL 3600
-$ORIGIN unifi.
-@ 3600 IN SOA gateway.bjw-s.tech. gateway.bjw-s.tech. (
+$ORIGIN 66.10.in-addr.arpa.
+@ 3600 IN SOA gateway.toskbot.xyz. gateway.toskbot.xyz. (
   1682790096         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
@@ -13,7 +14,13 @@ $ORIGIN unifi.
 )
 
 ; NS Records
-@                          IN  NS gateway.bjw-s.tech.
+@                          IN  NS gateway.toskbot.xyz.
 
-; CNAME Records
-@                          IN  A  10.5.0.10
+; Reset origin
+$ORIGIN in-addr.arpa.
+
+; LAN
+1.0.66.10                   IN  PTR  gateway.toskbot.xyz.
+
+; Servers
+; 11.1.66.10                  IN  PTR  myserver.toskbot.xyz.
