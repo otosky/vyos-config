@@ -1,6 +1,7 @@
 #!/bin/vbash
 
 set interfaces ethernet eth0 description 'WAN'
+set interfaces ethernet eth0 address 'dhcp'
 set interfaces ethernet eth0 hw-id '98:fa:9b:65:f4:50'
 set interfaces ethernet eth0 mtu '1508'
 set interfaces ethernet eth0 vif 6 description 'Internet'
