@@ -23,4 +23,12 @@ $ORIGIN in-addr.arpa.
 1.0.66.10                   IN  PTR  gateway.toskbot.xyz.
 
 ; Servers
-; 11.1.66.10                  IN  PTR  myserver.toskbot.xyz.
+21.1.66.10                  IN  PTR  nas.toskbot.xyz.
+31.1.66.10                  IN  PTR  kube-master01.toskbot.xyz.
+32.1.66.10                  IN  PTR  kube-master02.toskbot.xyz.
+33.1.66.10                  IN  PTR  kube-master03.toskbot.xyz.
+41.1.66.10                  IN  PTR  kube-server01.toskbot.xyz.
+42.1.66.10                  IN  PTR  kube-server02.toskbot.xyz.
+
+; Servers
+11.3.66.10                  IN  PTR  volumio.toskbot.xyz.

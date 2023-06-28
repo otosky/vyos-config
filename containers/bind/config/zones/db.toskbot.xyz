@@ -20,13 +20,17 @@ $ORIGIN toskbot.xyz.
 gateway                       IN  A  10.66.0.1
 
 ; Servers
-librarium                     IN  A  10.66.1.11
+nas                           IN  A  10.66.1.21
+kube-master01                 IN  A  10.66.1.31
+kube-master02                 IN  A  10.66.1.32
+kube-master03                 IN  A  10.66.1.33
+kube-server01                 IN  A  10.66.1.41
+kube-server02                 IN  A  10.66.1.42
 
 ; IOT
-livingroom-shield             IN  A  10.66.3.16
+volumio                       IN  A  10.66.3.11
 
 ; Containers
 cluster-0                     IN  A  10.67.0.4
 
 ; CNAME records
-nas                           IN  CNAME  librarium.toskbot.xyz.

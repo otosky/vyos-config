@@ -39,18 +39,18 @@ set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 range 0 
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas01 ip-address '10.66.1.21'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas01 mac-address '70:85:C2:66:EA:81'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master01 ip-address '10.66.1.30'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master01 ip-address '10.66.1.31'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master01 mac-address '98:fa:9b:98:09:91'
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master02 ip-address '10.66.1.31'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master02 ip-address '10.66.1.32'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master02 mac-address '00:2b:67:5a:86:d5'
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master03 ip-address '10.66.1.32'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master03 ip-address '10.66.1.33'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master03 mac-address '54:05:db:50:6b:a2'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server01 ip-address '10.66.1.33'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server01 ip-address '10.66.1.41'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server01 mac-address 'E4:1D:2D:DD:7D:10'
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 ip-address '10.66.1.34'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 ip-address '10.66.1.42'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 mac-address '24:8A:07:5D:9F:40'
-# set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 ip-address '10.66.1.35'
+# set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 ip-address '10.66.1.43'
 # set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 mac-address 
 
 # Trusted VLAN
