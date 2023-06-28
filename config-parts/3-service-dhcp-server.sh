@@ -63,19 +63,19 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 name-ser
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 range 0 start '10.66.2.200'
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 range 0 stop '10.66.2.254'
 
-set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping oliver-pixel ip-address '10.66.2.21'
-set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping oliver-pixel mac-address '22:6E:B0:7D:BE:F1'
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping oliver-desktop ip-address '10.66.2.22'
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping oliver-desktop mac-address
-set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping oliver-laptop ip-address '10.66.2.23'
-set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping oliver-laptop mac-address 'C4:BD:E5:1B:A6:48'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel ip-address '10.66.2.21'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel mac-address '22:6E:B0:7D:BE:F1'
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-desktop ip-address '10.66.2.22'
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-desktop mac-address
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-laptop ip-address '10.66.2.23'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-laptop mac-address 'C4:BD:E5:1B:A6:48'
 
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping emma-laptop ip-address '10.66.2.31'
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping emma-laptop mac-address 
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping emma-iphone ip-address '10.66.2.32'
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping emma-iphone mac-address 
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping livingroom-tablet ip-address '10.66.2.41'
-# set service dhcp-server shared-network-name IOT subnet 10.66.2.0/24 static-mapping livingroom-tablet mac-address 
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop ip-address '10.66.2.31'
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop mac-address 
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone ip-address '10.66.2.32'
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone mac-address 
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet ip-address '10.66.2.41'
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet mac-address 
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
