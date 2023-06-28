@@ -14,9 +14,9 @@ set system name-server '1.1.1.1'
 
 set system sysctl parameter kernel.pty.max value '24000'
 
-set system syslog file /home/vyos/log.txt facility kern level 'warning'
-set system syslog file /home/vyos/log.txt archive size 512
-set system syslog file /home/vyos/log.txt archive files 20
+# set system syslog file /home/vyos/log.txt facility kern level 'warning'
+# set system syslog file /home/vyos/log.txt archive size 512
+# set system syslog file /home/vyos/log.txt archive files 20
 
 # todo: send to k8s-vector and replace syslog file
 # set system syslog host 10.45.0.2 facility kern level 'warning'
