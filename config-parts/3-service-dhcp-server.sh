@@ -6,8 +6,8 @@ set service dhcp-server shared-network-name GUEST ping-check
 set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 default-router '192.168.50.1'
 set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 lease '86400'
 set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 name-server '10.67.0.3'
-set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 range 0 start '192.168.2.200'
-set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 range 0 stop '192.168.2.254'
+set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 range 0 start '192.168.50.200'
+set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 range 0 stop '192.168.50.254'
 
 set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 static-mapping oliver-work-laptop ip-address '192.168.50.11'
 set service dhcp-server shared-network-name GUEST subnet 192.168.50.0/24 static-mapping oliver-work-laptop mac-address '5C:E9:1E:C2:D8:6B'
