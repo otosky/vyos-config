@@ -65,12 +65,12 @@ set firewall name iot-servers rule 1 source group address-group 'k8s_ingress_all
 # set firewall name iot-servers rule 5 destination port '1883'
 # set firewall name iot-servers rule 5 protocol 'tcp'
 # set firewall name iot-servers rule 5 source group address-group 'esp'
-set firewall name iot-servers rule 10 action 'accept'
-set firewall name iot-servers rule 10 description 'Rule: accept_vector_journald_from_allowed_devices'
-set firewall name iot-servers rule 10 destination group address-group 'k8s_vector_aggregator'
-set firewall name iot-servers rule 10 destination port '6002'
-set firewall name iot-servers rule 10 protocol 'tcp'
-set firewall name iot-servers rule 10 source group address-group 'vector_journald_allowed'
+# set firewall name iot-servers rule 10 action 'accept'
+# set firewall name iot-servers rule 10 description 'Rule: accept_vector_journald_from_allowed_devices'
+# set firewall name iot-servers rule 10 destination group address-group 'k8s_vector_aggregator'
+# set firewall name iot-servers rule 10 destination port '6002'
+# set firewall name iot-servers rule 10 protocol 'tcp'
+# set firewall name iot-servers rule 10 source group address-group 'vector_journald_allowed'
 
 # From IOT to CONTAINERS
 set firewall name iot-containers default-action 'accept'
