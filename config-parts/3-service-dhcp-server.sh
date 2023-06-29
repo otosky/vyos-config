@@ -64,7 +64,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 range 0 
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 range 0 stop '10.66.2.254'
 
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel ip-address '10.66.2.21'
-set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel mac-address '22:6E:B0:7D:BE:F1'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel mac-address 'D6:21:9A:B3:6B:2E'
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-desktop ip-address '10.66.2.22'
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-desktop mac-address
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-laptop ip-address '10.66.2.23'
