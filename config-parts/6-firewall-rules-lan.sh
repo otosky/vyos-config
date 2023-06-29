@@ -48,7 +48,10 @@ set firewall name lan-containers rule 1 protocol 'tcp_udp'
 set firewall name lan-trusted default-action 'drop'
 set firewall name lan-trusted description 'From LAN to TRUSTED'
 set firewall name lan-trusted enable-default-log
-
+set firewall name lan-containers rule 1 action 'accept'
+set firewall name lan-containers rule 1 description 'Rule: accept_dns'
+set firewall name lan-containers rule 1 destination port 'domain,domain-s'
+set firewall name lan-containers rule 1 protocol 'tcp_udp'
 
 # From LAN to WAN
 set firewall name lan-wan default-action 'accept'
