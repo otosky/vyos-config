@@ -9,6 +9,10 @@ set firewall name iot-guest enable-default-log
 set firewall name iot-lan default-action 'drop'
 set firewall name iot-lan description 'From IOT to LAN'
 set firewall name iot-lan enable-default-log
+set firewall name iot-lan rule 999 action 'drop'
+set firewall name iot-lan rule 999 description 'Rule: drop_invalid'
+set firewall name iot-lan rule 999 state invalid 'enable'
+set firewall name iot-lan rule 999 log 'enable'
 
 # From IOT to LOCAL
 set firewall name iot-local default-action 'drop'
@@ -35,7 +39,6 @@ set firewall name iot-local rule 5 description 'Rule: accept_mdns'
 set firewall name iot-local rule 5 destination port 'mdns'
 set firewall name iot-local rule 5 protocol 'udp'
 set firewall name iot-local rule 5 source port 'mdns'
-set firewall name iot-local rule 6 action 'accept'
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'
@@ -79,6 +82,10 @@ set firewall name iot-containers rule 1 action 'accept'
 set firewall name iot-containers rule 1 description 'Rule: accept_dns'
 set firewall name iot-containers rule 1 destination port 'domain,domain-s'
 set firewall name iot-containers rule 1 protocol 'tcp_udp'
+set firewall name iot-containers rule 999 action 'drop'
+set firewall name iot-containers rule 999 description 'Rule: drop_invalid'
+set firewall name iot-containers rule 999 state invalid 'enable'
+set firewall name iot-containers rule 999 log 'enable'
 
 # From IOT to TRUSTED
 set firewall name iot-trusted default-action 'drop'
