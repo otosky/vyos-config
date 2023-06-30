@@ -12,9 +12,9 @@ set firewall group address-group nas_client address '10.66.3.11'
 ## K8s infra
 set firewall group address-group k8s_api address '10.5.0.2'
 
-set firewall group address-group k8s_nodes address '10.66.1.33'
-set firewall group address-group k8s_nodes address '10.66.1.34'
-# set firewall group address-group k8s_nodes address '10.66.1.35'
+set firewall group address-group k8s_nodes address '10.66.1.41'
+set firewall group address-group k8s_nodes address '10.66.1.42'
+# set firewall group address-group k8s_nodes address '10.66.1.43'
 
 set firewall group address-group k8s_ingress_allowed address '10.66.3.31'
 set firewall group address-group k8s_ingress_allowed address '10.66.3.32'
