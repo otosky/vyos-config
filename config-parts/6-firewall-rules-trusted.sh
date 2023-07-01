@@ -11,7 +11,6 @@ set firewall name trusted-iot description 'From TRUSTED to IOT'
 set firewall name trusted-iot rule 1 action 'accept'
 set firewall name trusted-iot rule 1 description 'Rule: accept_icmp'
 set firewall name trusted-iot rule 1 protocol 'icmp'
-set firewall name trusted-iot rule 2 action 'accept'
 
 # From TRUSTED to LAN
 set firewall name trusted-lan default-action 'accept'
