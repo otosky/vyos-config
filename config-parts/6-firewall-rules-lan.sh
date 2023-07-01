@@ -5,8 +5,8 @@ set firewall name lan-guest default-action 'drop'
 set firewall name lan-guest description 'From LAN to GUEST'
 set firewall name lan-guest enable-default-log
 
-# From LAN to GUEST
-set firewall name lan-iot default-action 'drop'
+# From LAN to IOT
+set firewall name lan-iot default-action 'accept'
 set firewall name lan-iot description 'From LAN to IOT'
 set firewall name lan-iot enable-default-log
 
