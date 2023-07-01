@@ -51,7 +51,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-m
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 ip-address '10.66.1.42'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 mac-address '24:8A:07:5D:9F:40'
 # set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 ip-address '10.66.1.43'
-# set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 mac-address 
+# set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 mac-address
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
@@ -71,11 +71,11 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-m
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-laptop mac-address 'C4:BD:E5:1B:A6:48'
 
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop ip-address '10.66.2.31'
-# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop mac-address 
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop mac-address
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone ip-address '10.66.2.32'
-# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone mac-address 
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone mac-address
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet ip-address '10.66.2.41'
-# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet mac-address 
+# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet mac-address
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
@@ -83,7 +83,7 @@ set service dhcp-server shared-network-name IOT ping-check
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 default-router '10.66.3.1'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 domain-name 'toskbot.xyz'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 lease '86400'
-set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 name-server '10.67.0.3'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 name-server '1.1.1.1'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 range 0 start '10.66.3.200'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 range 0 stop '10.66.3.254'
 
@@ -105,4 +105,3 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 ip-address '10.66.3.41'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 mac-address 'C0:49:EF:D4:DB:D8'
-
