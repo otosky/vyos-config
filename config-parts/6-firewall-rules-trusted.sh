@@ -15,10 +15,13 @@ set firewall name trusted-iot rule 1 protocol 'icmp'
 # From TRUSTED to LAN
 set firewall name trusted-lan default-action 'accept'
 set firewall name trusted-lan description 'From TRUSTED to LAN'
-set firewall name trusted-local rule 2 action 'accept'
-set firewall name trusted-local rule 2 description 'Rule: accept_ssh'
-set firewall name trusted-local rule 2 destination port 'ssh'
-set firewall name trusted-local rule 2 protocol 'tcp'
+set firewall name trusted-lan rule 1 action 'accept'
+set firewall name trusted-lan rule 1 description 'Rule: accept_icmp'
+set firewall name trusted-lan rule 1 protocol 'icmp'
+set firewall name trusted-lan rule 2 action 'accept'
+set firewall name trusted-lan rule 2 description 'Rule: accept_ssh'
+set firewall name trusted-lan rule 2 destination port 'ssh'
+set firewall name trusted-lan rule 2 protocol 'tcp'
 
 # From TRUSTED to LOCAL
 set firewall name trusted-local default-action 'drop'
