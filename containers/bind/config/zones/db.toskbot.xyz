@@ -18,6 +18,8 @@ $ORIGIN toskbot.xyz.
 
 ; LAN
 gateway                       IN  A  10.66.0.1
+brocade                       IN  A  10.66.0.11
+tplink                        IN  A  10.66.0.21
 
 ; Servers
 nas                           IN  A  10.66.1.21
