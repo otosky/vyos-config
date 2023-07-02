@@ -6,13 +6,9 @@ set firewall name iot-guest description 'From IOT to GUEST'
 set firewall name iot-guest enable-default-log
 
 # From IOT to LAN
-set firewall name iot-lan default-action 'accept'
+set firewall name iot-lan default-action 'drop'
 set firewall name iot-lan description 'From IOT to LAN'
 set firewall name iot-lan enable-default-log
-set firewall name iot-lan rule 1 action 'accept'
-set firewall name iot-lan rule 1 description 'Rule: accept_dns'
-set firewall name iot-lan rule 1 destination port 'domain,domain-s'
-set firewall name iot-lan rule 1 protocol 'tcp_udp'
 
 # From IOT to LOCAL
 set firewall name iot-local default-action 'drop'
