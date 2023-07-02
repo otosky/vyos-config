@@ -74,8 +74,8 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-m
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop mac-address
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone ip-address '10.66.2.32'
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-iphone mac-address
-# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet ip-address '10.66.2.41'
-# set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet mac-address
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet ip-address '10.66.2.41'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping livingroom-tablet mac-address '76:1E:53:A0:58:2F'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
