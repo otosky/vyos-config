@@ -39,6 +39,8 @@ source /opt/vyatta/etc/functions/script-template
 # Reset the configuration
 load /opt/vyatta/etc/config.boot.default
 
+source .env
+
 # Load all config files
 for f in /config/config-parts/*.sh
 do
