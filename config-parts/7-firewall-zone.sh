@@ -60,7 +60,7 @@ set firewall zone trusted from local firewall name 'local-trusted'
 set firewall zone trusted from servers firewall name 'servers-trusted'
 set firewall zone trusted from containers firewall name 'containers-trusted'
 set firewall zone trusted from wan firewall name 'wan-trusted'
-#set firewall zone trusted interface 'wg01'
+set firewall zone trusted interface 'wg01'
 
 set firewall zone containers default-action 'drop'
 set firewall zone containers interface 'pod-containers'
