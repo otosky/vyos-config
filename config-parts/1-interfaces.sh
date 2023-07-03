@@ -29,6 +29,7 @@ set interfaces wireguard wg01 peer ot-framework allowed-ips '10.66.5.2/32'
 set interfaces wireguard wg01 peer ot-framework persistent-keepalive '15'
 set interfaces wireguard wg01 peer ot-framework public-key 'jkjIuRwCIXeQxuzqzQEXgfbay2ha/mSRLgu5TSZlpUw='
 set interfaces wireguard wg01 peer oliver-pixel5 allowed-ips '10.66.5.3/32'
+set interfaces wireguard wg01 peer oliver-pixel5 persistent-keepalive '15'
 set interfaces wireguard wg01 peer oliver-pixel5 public-key 'y41/A4zqAqzr9KHKEkMXBhqoQH0lz62/tSi8VFtRWS8='
 set interfaces wireguard wg01 port '51820'
 set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
