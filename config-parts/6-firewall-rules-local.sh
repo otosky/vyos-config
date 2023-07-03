@@ -64,6 +64,10 @@ set firewall name local-trusted rule 2 description 'Rule: accept_mdns'
 set firewall name local-trusted rule 2 destination port 'mdns'
 set firewall name local-trusted rule 2 protocol 'udp'
 set firewall name local-trusted rule 2 source port 'mdns'
+set firewall name local-trusted rule 300 action 'accept'
+set firewall name local-trusted rule 300 description 'Rule: accept_wireguard'
+set firewall name local-trusted rule 300 source port '51820'
+set firewall name local-trusted rule 300 protocol 'udp'
 
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'

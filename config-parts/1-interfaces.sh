@@ -22,3 +22,11 @@ set interfaces ethernet eth1 vif 40 description 'IOT'
 set interfaces ethernet eth2 hw-id '90:e2:ba:36:e2:09'
 set interfaces ethernet eth3 hw-id '90:e2:ba:36:e2:0a'
 set interfaces ethernet eth4 hw-id '90:e2:ba:36:e2:0b'
+
+set interfaces wireguard wg01 address '10.66.5.1/24'
+set interfaces wireguard wg01 description 'WIREGUARD'
+set interfaces wireguard wg01 peer ot-framework allowed-ips '10.66.5.2/32'
+set interfaces wireguard wg01 peer ot-framework persistent-keepalive '15'
+set interfaces wireguard wg01 peer ot-framework public-key 'pwc1L4K9F52a6BbXLgZ6gX2lrF8yz7ZHuggSDZyfFCE='
+set interfaces wireguard wg01 port '51820'
+# set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
