@@ -98,9 +98,6 @@ set firewall name iot-containers rule 1 protocol 'tcp_udp'
 set firewall name iot-trusted default-action 'drop'
 set firewall name iot-trusted description 'From IOT to TRUSTED'
 set firewall name iot-trusted enable-default-log
-set firewall name iot-trusted rule 5 action 'accept'
-set firewall name iot-trusted rule 5 description 'Rule: accept_igmp'
-set firewall name iot-trusted rule 5 protocol '2'
 
 # From IOT to WAN
 set firewall name iot-wan default-action 'accept'
