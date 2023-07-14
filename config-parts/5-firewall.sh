@@ -7,7 +7,7 @@ set firewall state-policy related action 'accept'
 
 # Address Groups
 set firewall group address-group jellyfin_clients address '10.66.3.21'
-set firewall group address-group nas_client address '10.66.3.11'
+set firewall group address-group nas_clients address '10.66.3.11'
 
 ## K8s infra
 set firewall group address-group k8s_api address '10.5.0.2'
