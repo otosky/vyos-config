@@ -53,3 +53,16 @@ set container name cloudflare-ddns image 'docker.io/favonia/cloudflare-ddns:1.9.
 set container name cloudflare-ddns memory '0'
 set container name cloudflare-ddns restart 'on-failure'
 set container name cloudflare-ddns shared-memory '0'
+
+# udp-broadcast-relay-volumio
+set container name udp-broadcast-relay-volumio allow-host-networks
+set container name udp-broadcast-relay-volumio cap-add 'net-raw'
+set container name udp-broadcast-relay-volumio environment CFG_DEV value 'eth1.20;eth1.40'
+set container name udp-broadcast-relay-volumio environment CFG_ID value '1'
+set container name udp-broadcast-relay-volumio environment CFG_MULTICAST value '239.255.255.250'
+set container name udp-broadcast-relay-volumio environment CFG_PORT value '1900'
+set container name udp-broadcast-relay-volumio environment SEPARATOR value ';'
+set container name udp-broadcast-relay-volumio image 'ghcr.io/onedr0p/udp-broadcast-relay-redux:1.0.27'
+set container name udp-broadcast-relay-volumio memory '0'
+set container name udp-broadcast-relay-volumio restart 'on-failure'
+set container name udp-broadcast-relay-volumio shared-memory '0'
