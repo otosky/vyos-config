@@ -43,6 +43,11 @@ set firewall name iot-local rule 300 description 'Rule: accept_discovery_from_vo
 set firewall name iot-local rule 300 destination port '1900'
 set firewall name iot-local rule 300 protocol 'udp'
 set firewall name iot-local rule 300 source group address-group 'volumio'
+set firewall name iot-local rule 301 action 'accept'
+set firewall name iot-local rule 301 description 'Rule: accept_discovery_from_bubbleupnp'
+set firewall name iot-local rule 301 destination port '1900'
+set firewall name iot-local rule 301 protocol 'udp'
+set firewall name iot-local rule 300 source address '10.66.2.21'
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'

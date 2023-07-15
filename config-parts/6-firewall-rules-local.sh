@@ -22,6 +22,11 @@ set firewall name local-iot rule 300 description 'Rule: accept_discovery_from_vo
 set firewall name local-iot rule 300 destination port '1900'
 set firewall name local-iot rule 300 protocol 'udp'
 set firewall name local-iot rule 300 source group address-group 'volumio'
+set firewall name local-iot rule 301 action 'accept'
+set firewall name local-iot rule 301 description 'Rule: accept_discovery_from_bubbleupnp'
+set firewall name local-iot rule 301 destination port '1900'
+set firewall name local-iot rule 301 protocol 'udp'
+set firewall name local-iot rule 300 source address '10.66.2.21'
 
 # From LOCAL to LAN
 set firewall name local-lan default-action 'drop'
@@ -78,6 +83,11 @@ set firewall name local-trusted rule 300 description 'Rule: accept_discovery_fro
 set firewall name local-trusted rule 300 destination port '1900'
 set firewall name local-trusted rule 300 protocol 'udp'
 set firewall name local-trusted rule 300 source group address-group 'volumio'
+set firewall name local-trusted rule 301 action 'accept'
+set firewall name local-trusted rule 301 description 'Rule: accept_discovery_from_bubbleupnp'
+set firewall name local-trusted rule 301 destination port '1900'
+set firewall name local-trusted rule 301 protocol 'udp'
+set firewall name local-trusted rule 300 source address '10.66.2.21'
 
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'

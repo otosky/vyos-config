@@ -64,6 +64,11 @@ set firewall name trusted-local rule 300 description 'Rule: accept_discovery_fro
 set firewall name trusted-local rule 300 destination port '1900'
 set firewall name trusted-local rule 300 protocol 'udp'
 set firewall name trusted-local rule 300 source group address-group 'volumio'
+set firewall name trusted-local rule 301 action 'accept'
+set firewall name trusted-local rule 301 description 'Rule: accept_discovery_from_bubbleupnp'
+set firewall name trusted-local rule 301 destination port '1900'
+set firewall name trusted-local rule 301 protocol 'udp'
+set firewall name trusted-local rule 300 source address '10.66.2.21'
 
 # From TRUSTED to SERVERS
 set firewall name trusted-servers default-action 'accept'
