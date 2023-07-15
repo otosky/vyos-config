@@ -14,7 +14,7 @@ set firewall name servers-iot rule 1 description 'Rule: accept_icmp'
 set firewall name servers-iot rule 1 protocol 'icmp'
 set firewall name servers-iot rule 2 action 'accept'
 set firewall name servers-iot rule 2 description 'Rule: accept_k8s_nodes'
-set firewall name servers-iot rule 2 protocol 'tcp'
+set firewall name servers-iot rule 2 protocol 'tcp_udp'
 set firewall name servers-iot rule 2 source group address-group 'k8s_nodes'
 
 # From SERVERS to LAN
