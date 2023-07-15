@@ -31,6 +31,9 @@ set firewall group address-group k8s_hass address '10.66.1.104'
 
 set firewall group address-group nas address '10.66.1.21'
 
+## IOT
+set firewall group address-group volumio address '10.66.3.11'
+
 ## VyOS
 set firewall group address-group vyos_dnsdist address '10.67.0.3'
 

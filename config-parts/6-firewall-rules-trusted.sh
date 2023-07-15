@@ -59,6 +59,11 @@ set firewall name trusted-local rule 8 action 'accept'
 set firewall name trusted-local rule 8 description 'Rule: accept_vyos_api'
 set firewall name trusted-local rule 8 destination port '8443'
 set firewall name trusted-local rule 8 protocol 'tcp'
+set firewall name trusted-local rule 300 action 'accept'
+set firewall name trusted-local rule 300 description 'Rule: accept_discovery_from_volumio'
+set firewall name trusted-local rule 300 destination port '1900'
+set firewall name trusted-local rule 300 protocol 'udp'
+set firewall name trusted-local rule 300 source group address-group 'volumio'
 
 # From TRUSTED to SERVERS
 set firewall name trusted-servers default-action 'accept'

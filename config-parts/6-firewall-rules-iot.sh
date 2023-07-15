@@ -38,6 +38,11 @@ set firewall name iot-local rule 6 description 'Rule: accept_mdns'
 set firewall name iot-local rule 6 destination port 'mdns'
 set firewall name iot-local rule 6 protocol 'udp'
 set firewall name iot-local rule 6 source port 'mdns'
+set firewall name iot-local rule 300 action 'accept'
+set firewall name iot-local rule 300 description 'Rule: accept_discovery_from_volumio'
+set firewall name iot-local rule 300 destination port '1900'
+set firewall name iot-local rule 300 protocol 'udp'
+set firewall name iot-local rule 300 source group address-group 'volumio'
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'
@@ -98,6 +103,12 @@ set firewall name iot-containers rule 1 protocol 'tcp_udp'
 set firewall name iot-trusted default-action 'drop'
 set firewall name iot-trusted description 'From IOT to TRUSTED'
 set firewall name iot-trusted enable-default-log
+# set firewall name iot-servers rule 5 action 'accept'
+# set firewall name iot-servers rule 5 description 'Rule: accept_mqtt_from_esp'
+# set firewall name iot-servers rule 5 destination group address-group 'k8s_mqtt'
+# set firewall name iot-servers rule 5 destination port '1883'
+# set firewall name iot-servers rule 5 protocol 'tcp'
+# set firewall name iot-servers rule 5 source group address-group 'esp'
 
 # From IOT to WAN
 set firewall name iot-wan default-action 'accept'
