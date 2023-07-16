@@ -63,7 +63,6 @@ set firewall name trusted-local rule 300 action 'accept'
 set firewall name trusted-local rule 300 description 'Rule: accept_ssdp'
 set firewall name trusted-local rule 300 destination port '1900'
 set firewall name trusted-local rule 300 protocol 'udp'
-set firewall name trusted-local rule 300 source port '1900'
 
 # From TRUSTED to SERVERS
 set firewall name trusted-servers default-action 'accept'

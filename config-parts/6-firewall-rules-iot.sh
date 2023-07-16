@@ -42,7 +42,6 @@ set firewall name iot-local rule 300 action 'accept'
 set firewall name iot-local rule 300 description 'Rule: accept_ssdp'
 set firewall name iot-local rule 300 destination port '1900'
 set firewall name iot-local rule 300 protocol 'udp'
-set firewall name iot-local rule 300 source port '1900'
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'
