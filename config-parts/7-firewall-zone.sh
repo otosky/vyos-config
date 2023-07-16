@@ -82,4 +82,3 @@ set firewall zone wan from local firewall name 'local-wan'
 set firewall zone wan from servers firewall name 'servers-wan'
 set firewall zone wan from containers firewall name 'containers-wan'
 set firewall zone wan from trusted firewall name 'trusted-wan'
-
