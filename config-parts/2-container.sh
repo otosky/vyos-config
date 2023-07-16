@@ -79,3 +79,8 @@ set container name udp-broadcast-relay-mdns shared-memory '0'
 # set container name udp-broadcast-relay-volumio memory '0'
 # set container name udp-broadcast-relay-volumio restart 'on-failure'
 # set container name udp-broadcast-relay-volumio shared-memory '0'
+
+set service broadcast-relay id 10 description 'VOLUMIO'
+set service broadcast-relay id 10 interface 'eth1.20'
+set service broadcast-relay id 10 interface 'eth1.40'
+set service broadcast-relay id 10 port '1900'
