@@ -25,8 +25,8 @@ set firewall name trusted-iot rule 310 destination port '8008-8009,8443'
 set firewall name trusted-iot rule 310 protocol 'tcp'
 set firewall name trusted-iot rule 315 action 'accept'
 set firewall name trusted-iot rule 315 description 'Rule: accept_cast_high_udp_ports'
-set firewall name trusted-iot rule 315 destination port '32768-61000'
-set firewall name trusted-iot rule 315 protocol 'tcp_udp'
+set firewall name trusted-iot rule 315 source port '32768-61000'
+set firewall name trusted-iot rule 315 protocol 'udp'
 
 # From TRUSTED to LAN
 set firewall name trusted-lan default-action 'accept'
