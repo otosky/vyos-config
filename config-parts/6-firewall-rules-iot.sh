@@ -99,7 +99,7 @@ set firewall name iot-containers rule 1 destination port 'domain,domain-s'
 set firewall name iot-containers rule 1 protocol 'tcp_udp'
 
 # From IOT to TRUSTED
-set firewall name iot-trusted default-action 'drop'
+set firewall name iot-trusted default-action 'accept'
 set firewall name iot-trusted description 'From IOT to TRUSTED'
 set firewall name iot-trusted enable-default-log
 set firewall name iot-trusted rule 300 action 'accept'
