@@ -33,6 +33,13 @@ set firewall group address-group nas address '10.66.1.21'
 
 ## IOT
 set firewall group address-group volumio address '10.66.3.11'
+set firewall group address-group roku address '10.66.3.21'
+
+set firewall group address-group cast_speakers address '10.66.3.31'
+set firewall group address-group cast_speakers address '10.66.3.32'
+
+set firewall group address-group ssdp_sources address '10.66.3.11'
+set firewall group address-group ssdp_sources address '10.66.3.21'
 
 ## VyOS
 set firewall group address-group vyos_dnsdist address '10.67.0.3'

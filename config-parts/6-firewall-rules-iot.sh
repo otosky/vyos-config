@@ -42,6 +42,7 @@ set firewall name iot-local rule 300 action 'accept'
 set firewall name iot-local rule 300 description 'Rule: accept_ssdp'
 set firewall name iot-local rule 300 destination port '1900'
 set firewall name iot-local rule 300 protocol 'udp'
+set firewall name iot-local rule 300 source group address-group 'ssdp_sources'
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'
@@ -102,25 +103,18 @@ set firewall name iot-containers rule 1 protocol 'tcp_udp'
 set firewall name iot-trusted default-action 'drop'
 set firewall name iot-trusted description 'From IOT to TRUSTED'
 set firewall name iot-trusted enable-default-log
-# set firewall name iot-trusted rule 300 action 'accept'
-# set firewall name iot-trusted rule 300 description 'Rule: accept_ssdp'
-# set firewall name iot-trusted rule 300 destination port '1900'
-# set firewall name iot-trusted rule 300 protocol 'udp'
-
 set firewall name iot-trusted rule 310 action 'accept'
 set firewall name iot-trusted rule 310 description 'Rule: accept_chromecast'
 set firewall name iot-trusted rule 310 source port '8008-8009,8443'
 set firewall name iot-trusted rule 310 protocol 'tcp'
+set firewall name iot-trusted rule 310 source group address-group 'cast_speakers'
+
 set firewall name iot-trusted rule 315 action 'accept'
 set firewall name iot-trusted rule 315 description 'Rule: accept_roku'
 set firewall name iot-trusted rule 315 source port '8060'
 set firewall name iot-trusted rule 315 protocol 'tcp'
+set firewall name iot-trusted rule 315 source group address-group 'roku'
 
-# set firewall name iot-trusted rule 320 action 'accept'
-# set firewall name iot-trusted rule 320 description 'Rule: accept_high_udp'
-# set firewall name iot-trusted rule 320 source port '32768-65535'
-# set firewall name iot-trusted rule 320 protocol 'udp'
-#
 # set firewall name iot-servers rule 5 action 'accept'
 # set firewall name iot-servers rule 5 description 'Rule: accept_mqtt_from_esp'
 # set firewall name iot-servers rule 5 destination group address-group 'k8s_mqtt'
