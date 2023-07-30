@@ -21,7 +21,7 @@ set firewall name local-iot rule 300 action 'accept'
 set firewall name local-iot rule 300 description 'Rule: accept_ssdp'
 set firewall name local-iot rule 300 destination port '1900'
 set firewall name local-iot rule 300 protocol 'udp'
-set firewall name local-iot rule 300 source group address-group 'ssdp_sources'
+#set firewall name local-iot rule 300 source group address-group 'ssdp_sources'
 
 # From LOCAL to LAN
 set firewall name local-lan default-action 'drop'
@@ -77,7 +77,7 @@ set firewall name local-trusted rule 300 action 'accept'
 set firewall name local-trusted rule 300 description 'Rule: accept_ssdp'
 set firewall name local-trusted rule 300 destination port '1900'
 set firewall name local-trusted rule 300 protocol 'udp'
-set firewall name local-trusted rule 300 source group address-group 'ssdp_sources'
+#set firewall name local-trusted rule 300 source group address-group 'ssdp_sources'
 
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'
