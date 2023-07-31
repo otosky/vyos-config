@@ -106,7 +106,7 @@ set firewall name iot-trusted enable-default-log
 set firewall name iot-trusted rule 300 action 'accept'
 set firewall name iot-trusted rule 300 description 'Rule: accept_ssdp'
 set firewall name iot-trusted rule 300 source port '1900'
-set firewall name iot-trusted rule 300 protocol 'tcp'
+set firewall name iot-trusted rule 300 protocol 'udp'
 set firewall name iot-trusted rule 300 source group address-group 'ssdp_sources'
 set firewall name iot-trusted rule 310 action 'accept'
 set firewall name iot-trusted rule 310 description 'Rule: accept_chromecast'
