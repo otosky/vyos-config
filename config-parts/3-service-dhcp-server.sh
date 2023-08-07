@@ -50,8 +50,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-m
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server01 mac-address 'E4:1D:2D:DD:7D:10'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 ip-address '10.66.1.42'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server02 mac-address '24:8A:07:5D:9F:40'
-# set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 ip-address '10.66.1.43'
-# set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 mac-address
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 ip-address '10.66.1.43'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-server03 mac-address 'A4:BB:6D:BD:75:3B'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
