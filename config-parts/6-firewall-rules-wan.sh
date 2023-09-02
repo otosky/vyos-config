@@ -23,6 +23,10 @@ set firewall name wan-local rule 1 action 'accept'
 set firewall name wan-local rule 1 description 'Rule: accept_wireguard'
 set firewall name wan-local rule 1 destination port '51820'
 set firewall name wan-local rule 1 protocol 'udp'
+set firewall name wan-local rule 2 action 'accept'
+set firewall name wan-local rule 2 description 'Rule: accept_icmp'
+set firewall name wan-local rule 2 protocol 'icmp'
+set firewall name wan-local rule 2 source group address-group 'uptime_robot_whitelist'
 
 # From WAN to SERVERS
 set firewall name wan-servers default-action 'drop'
@@ -38,4 +42,3 @@ set firewall name wan-containers enable-default-log
 set firewall name wan-trusted default-action 'drop'
 set firewall name wan-trusted description 'From WAN to TRUSTED'
 set firewall name wan-trusted enable-default-log
-

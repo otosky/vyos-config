@@ -9,6 +9,16 @@ set firewall state-policy related action 'accept'
 set firewall group address-group jellyfin_clients address '10.66.3.21'
 set firewall group address-group nas_clients address '10.66.3.11'
 
+# Uptime Robot
+set firewall group address-group uptime_robot_whitelist address '69.162.124.224'
+set firewall group address-group uptime_robot_whitelist address '63.143.42.240'
+set firewall group address-group uptime_robot_whitelist address '216.245.221.80'
+set firewall group address-group uptime_robot_whitelist address '208.115.199.16'
+set firewall group address-group uptime_robot_whitelist address '216.144.248.16'
+set firewall group address-group uptime_robot_whitelist address '104.131.107.63'
+set firewall group address-group uptime_robot_whitelist address '165.227.83.148'
+set firewall group address-group uptime_robot_whitelist address '216.144.250.150'
+
 ## K8s infra
 set firewall group address-group k8s_api address '10.5.0.2'
 
