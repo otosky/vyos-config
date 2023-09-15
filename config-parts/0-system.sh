@@ -14,6 +14,8 @@ set system name-server '1.1.1.1'
 
 set system sysctl parameter kernel.pty.max value '24000'
 
+set system static-host-mapping host-name unifi inet 10.67.0.5
+
 # set system syslog file /home/vyos/log.txt facility kern level 'warning'
 # set system syslog file /home/vyos/log.txt archive size 512
 # set system syslog file /home/vyos/log.txt archive files 20
