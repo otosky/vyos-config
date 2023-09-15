@@ -5,8 +5,8 @@
 ; SOA Records
 $TTL 3600
 $ORIGIN unifi.
-@ 3600 IN SOA gateway.toskbot.xyz. gateway.toskbot.xyz. (
-  1690965199         ; serial number (epoch timestamp)
+@ 3600 IN SOA unifi. gateway.toskbot.xyz. (
+  1694741677         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
