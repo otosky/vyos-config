@@ -43,6 +43,10 @@ set firewall name lan-containers rule 1 action 'accept'
 set firewall name lan-containers rule 1 description 'Rule: accept_dns'
 set firewall name lan-containers rule 1 destination port 'domain,domain-s'
 set firewall name lan-containers rule 1 protocol 'tcp_udp'
+set firewall name lan-containers rule 2 action 'accept'
+set firewall name lan-containers rule 2 description 'Rule: accept_unifi_discovery'
+set firewall name lan-containers rule 2 destination port '10001,1900'
+set firewall name lan-containers rule 2 protocol 'tcp_udp'
 
 # From LAN to TRUSTED
 set firewall name lan-trusted default-action 'drop'

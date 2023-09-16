@@ -14,6 +14,10 @@ set firewall name containers-iot enable-default-log
 set firewall name containers-lan default-action 'drop'
 set firewall name containers-lan description 'From CONTAINERS to LAN'
 set firewall name containers-lan enable-default-log
+set firewall name containers-lan rule 1 action 'accept'
+set firewall name containers-lan rule 1 description 'Rule: accept_unifi_discovery'
+set firewall name containers-lan rule 1 destination port '10001,1900'
+set firewall name containers-lan rule 1 protocol 'tcp_udp'
 
 # From CONTAINERS to LOCAL
 set firewall name containers-local default-action 'drop'
