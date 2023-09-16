@@ -28,6 +28,7 @@ kube-master02                 IN  A  10.66.1.32
 kube-master03                 IN  A  10.66.1.33
 kube-server01                 IN  A  10.66.1.41
 kube-server02                 IN  A  10.66.1.42
+kube-server03                 IN  A  10.66.1.43
 
 ; IOT
 volumio                       IN  A  10.66.3.11
@@ -35,5 +36,6 @@ roku                          IN  A  10.66.3.21
 
 ; Containers
 cluster-0                     IN  A  10.67.0.4
+unifi                         IN  A  10.67.0.5
 
 ; CNAME records
