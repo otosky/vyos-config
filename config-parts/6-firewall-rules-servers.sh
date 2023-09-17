@@ -81,6 +81,11 @@ set firewall name servers-trusted enable-default-log
 set firewall name servers-trusted rule 1 action 'accept'
 set firewall name servers-trusted rule 1 description 'Rule: accept_icmp'
 set firewall name servers-trusted rule 1 protocol 'icmp'
+set firewall name servers-trusted rule 2 action 'accept'
+set firewall name servers-trusted rule 2 description 'Rule: accept_syncthing_sync'
+set firewall name servers-trusted rule 2 destination port '22000'
+set firewall name servers-trusted rule 2 protocol 'tcp'
+set firewall name servers-trusted rule 2 source group address-group 'k8s_syncthing'
 
 # From SERVERS to WAN
 set firewall name servers-wan default-action 'accept'

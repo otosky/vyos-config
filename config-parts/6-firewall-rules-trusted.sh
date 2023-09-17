@@ -88,6 +88,11 @@ set firewall name trusted-servers description 'From TRUSTED to SERVERS'
 set firewall name trusted-servers rule 1 action 'accept'
 set firewall name trusted-servers rule 1 description 'Rule: accept_icmp'
 set firewall name trusted-servers rule 1 protocol 'icmp'
+set firewall name trusted-servers rule 2 action 'accept'
+set firewall name trusted-servers rule 2 description 'Rule: accept_syncthing_sync'
+set firewall name trusted-servers rule 2 destination port '22000'
+set firewall name trusted-servers rule 2 protocol 'tcp'
+set firewall name trusted-servers rule 2 destination group address-group 'k8s_syncthing'
 
 # From TRUSTED to CONTAINERS
 set firewall name trusted-containers default-action 'accept'

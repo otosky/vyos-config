@@ -36,7 +36,7 @@ set firewall group address-group k8s_ingress_allowed address '10.66.3.41'
 set firewall group address-group k8s_ingress address '10.66.1.100'
 set firewall group address-group k8s_jellyfin address '10.66.1.103'
 set firewall group address-group k8s_hass address '10.66.1.104'
-# set firewall group address-group k8s_mqtt address '10.68.0.10'
+set firewall group address-group k8s_syncthing address '10.66.1.106'
 # set firewall group address-group k8s_vector_aggregator address '10.68.0.2'
 
 set firewall group address-group nas address '10.66.1.21'
