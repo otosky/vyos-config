@@ -23,6 +23,7 @@ tplink                        IN  A  10.66.0.21
 
 ; Servers
 nas                           IN  A  10.66.1.21
+nas-backup                    IN  A  10.66.1.22
 kube-master01                 IN  A  10.66.1.31
 kube-master02                 IN  A  10.66.1.32
 kube-master03                 IN  A  10.66.1.33
