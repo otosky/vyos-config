@@ -81,6 +81,7 @@ set container name udp-broadcast-relay-volumio restart 'on-failure'
 set container name udp-broadcast-relay-volumio shared-memory '0'
 
 # unifi
+set container name unifi cap-add net-bind-service
 set container name unifi network containers address '10.67.0.5'
 set container name unifi environment RUNAS_UID0 value 'false'
 set container name unifi environment TZ value 'America/New_York'
@@ -97,3 +98,6 @@ set container name unifi volume data mode 'rw'
 set container name unifi port http source 80
 set container name unifi port http destination 8080
 set container name unifi port http protocol tcp
+set container name unifi port https source 443
+set container name unifi port https destination 8443
+set container name unifi port https protocol tcp
