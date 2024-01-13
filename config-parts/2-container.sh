@@ -88,6 +88,7 @@ set container name unifi environment TZ value 'America/New_York'
 set container name unifi environment UNIFI_UID value '999'
 set container name unifi environment UNIFI_GID value '999'
 set container name unifi environment UNIFI_STDOUT value 'true'
+set container name unifi environment UNIFI_HTTPS_PORT '443'
 set container name unifi image 'ghcr.io/jacobalberty/unifi-docker:v7.5.174'
 set container name unifi memory '0'
 set container name unifi restart 'on-failure'
@@ -95,9 +96,3 @@ set container name unifi shared-memory '0'
 set container name unifi volume data source '/config/containers/unifi'
 set container name unifi volume data destination '/unifi'
 set container name unifi volume data mode 'rw'
-set container name unifi port http source 80
-set container name unifi port http destination 8080
-set container name unifi port http protocol tcp
-set container name unifi port https source 443
-set container name unifi port https destination 8443
-set container name unifi port https protocol tcp
