@@ -94,6 +94,6 @@ set container name unifi shared-memory '0'
 set container name unifi volume data source '/config/containers/unifi'
 set container name unifi volume data destination '/unifi'
 set container name unifi volume data mode 'rw'
-set container name unifi port https source 443
-set container name unifi port https destination 8443
-set container name unifi port https protocol tcp
+set container name unifi port http source 80
+set container name unifi port http destination 8080
+set container name unifi port http protocol tcp
