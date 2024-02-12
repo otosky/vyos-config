@@ -21,10 +21,21 @@ DHCP only hands out IPs from .200-.254
 
 ## DNS
 
-```
-request -> dnsdist -> bind -> internal -> static-mappings & k8s-populated
-                        |---> external -> nextdns
-                        |---> guest    -> cloudflare
+```mermaid
+flowchart LR
+      A[ User ];
+      B[ dnsdist ];
+      C{{ is .toskbot.xyz? }};
+      D[bind];
+      E{{ is from GUEST vlan? }};
+      F[ cloudflare ];
+      G[ nextdns ];
+      A-- request --> B;
+      B --> C;
+      C-- Yes --> D;
+      C-- No --> E;
+      E-- Yes --> F;
+      E-- Yes --> G;
 ```
 
 - dnsdist routes dns requests to different nameservers based on destination domain, source subnet, etc.
