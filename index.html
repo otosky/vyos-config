@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#my-vyos-router-configuration" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -297,6 +302,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Vyos-Config
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -306,6 +322,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#my-vyos-router-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      My VyOS Router Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      VLANs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      DNS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -397,6 +466,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#my-vyos-router-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      My VyOS Router Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      VLANs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      DNS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -412,7 +525,128 @@
 
   <h1>Vyos-Config</h1>
 
-
+<div align="center">
+<h2 id="my-vyos-router-configuration">My VyOS Router Configuration</h2>
+</div>
+<h2 id="vlans">VLANs</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">VLAN</th>
+<th style="text-align: center;">Name</th>
+<th style="text-align: center;">Subnet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">LAN</td>
+<td style="text-align: center;">10.66.0.0/24</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">SERVERS</td>
+<td style="text-align: center;">10.66.1.0/24</td>
+</tr>
+<tr>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">TRUSTED</td>
+<td style="text-align: center;">10.66.2.0/24</td>
+</tr>
+<tr>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">GUEST</td>
+<td style="text-align: center;">192.168.50.0/24</td>
+</tr>
+<tr>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">IOT</td>
+<td style="text-align: center;">10.66.3.0/24</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">WIREGUARD</td>
+<td style="text-align: center;">10.66.5.0/24</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">CONTAINERS</td>
+<td style="text-align: center;">10.67.0.0/24</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>DHCP will only hand out IPs from .200-.254</p>
+</div>
+<h2 id="containers">Containers</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Name</th>
+<th style="text-align: center;">Repo</th>
+<th style="text-align: center;">IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">bind</td>
+<td style="text-align: center;">docker.io/internetsystemsconsortium/bind9:9.19</td>
+<td style="text-align: center;">10.67.0.2</td>
+</tr>
+<tr>
+<td style="text-align: center;">dnsdist</td>
+<td style="text-align: center;">docker.io/powerdns/dnsdist-18:1.8.0</td>
+<td style="text-align: center;">10.67.0.3</td>
+</tr>
+<tr>
+<td style="text-align: center;">haproxy (for k8s)</td>
+<td style="text-align: center;">docker.io/library/haproxy:2.7.8</td>
+<td style="text-align: center;">10.67.0.4</td>
+</tr>
+<tr>
+<td style="text-align: center;">unifi-controller</td>
+<td style="text-align: center;">ghcr.io/jacobalberty/unifi-docker:v7.5.174</td>
+<td style="text-align: center;">10.67.0.5</td>
+</tr>
+<tr>
+<td style="text-align: center;">cloudflare-ddns</td>
+<td style="text-align: center;">docker.io/favonia/cloudflare-ddns:1.9.4</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">udp-broadcast relay (mdns)</td>
+<td style="text-align: center;">ghcr.io/onedr0p/udp-broadcast-relay-redux:1.0.27</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">udp-broadcast relay (upnp)</td>
+<td style="text-align: center;">ghcr.io/onedr0p/udp-broadcast-relay-redux:1.0.27</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="dns">DNS</h2>
+<p>DNS routing is handled by a <a href="https://dnsdist.org/">dnsdist</a> container which splits traffic
+for users on the local network to either: </p>
+<ul>
+<li>an instance of <a href="https://bind9.net/">bind9</a> for local services registered to my domain </li>
+<li>a public DNS server for anything else</li>
+</ul>
+<pre class="mermaid"><code>flowchart LR
+      A[ User ];
+      B[ dnsdist ];
+      C{{ is .toskbot.xyz? }};
+      D[bind];
+      E{{ is from GUEST vlan? }};
+      F[ cloudflare ];
+      G[ nextdns ];
+      A-- request --&gt; B;
+      B --&gt; C;
+      C-- Yes --&gt; D;
+      C-- No --&gt; E;
+      E-- Yes --&gt; F;
+      E-- Yes --&gt; G;</code></pre>
 
 
 
