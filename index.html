@@ -633,7 +633,7 @@ for users on the local network to either: </p>
 <li>an instance of <a href="https://bind9.net/">bind9</a> for local services registered to my domain </li>
 <li>a public DNS server for anything else</li>
 </ul>
-<div class="highlight"><pre><span></span><code>flowchart LR
+<pre class="mermaid"><code>flowchart LR
       A[ User ];
       B[ dnsdist ];
       C{{ is .toskbot.xyz? }};
@@ -646,8 +646,7 @@ for users on the local network to either: </p>
       C-- Yes --&gt; D;
       C-- No --&gt; E;
       E-- Yes --&gt; F;
-      E-- Yes --&gt; G;
-</code></pre></div>
+      E-- Yes --&gt; G;</code></pre>
 
 
 
