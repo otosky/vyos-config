@@ -6,11 +6,11 @@ authors = ["Oliver Tosky <olivertosky@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 mkdocs = "^1.4.2"
-mkdocs-material = "^9.1.5"
+mkdocs-material = "^9.5.9"
 black = "*"
 isort = "*"
 
