@@ -51,5 +51,5 @@ flowchart LR
       C-- Yes --> D;
       C-- No --> E;
       E-- Yes --> F;
-      E-- Yes --> G;
+      E-- No --> G;
 ```
