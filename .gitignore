@@ -15,3 +15,11 @@
 
 # CI
 !.github/
+
+# Docs
+!pyproject.toml
+!poetry.lock
+!docs/
+!.mise.toml
+!mkdocs.yaml
+
