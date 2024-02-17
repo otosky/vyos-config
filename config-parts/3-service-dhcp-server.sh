@@ -25,6 +25,8 @@ set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mappi
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping switch01 mac-address 'CC:4E:24:60:6B:E0'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping switch02 ip-address '10.66.0.12'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping switch02 mac-address 'F4:E2:C6:52:84:83'
+set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping switch03 ip-address '10.66.0.13'
+set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping switch03 mac-address '70:A7:41:C1:A6:B2'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping ap01 ip-address '10.66.0.21'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping ap01 mac-address '34:60:F9:2E:A5:F2'
 
