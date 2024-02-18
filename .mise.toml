@@ -1,5 +1,5 @@
 [tools]
+poetry = {version='1.7.0', pyproject='pyproject.toml'}
 python = {version='3.12.1', virtualenv='.venv'}
-poetry = '1.7.0'
 just = '1.16.0'
 
