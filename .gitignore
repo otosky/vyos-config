@@ -4,6 +4,7 @@
 # Track certain files and directories
 !.gitignore
 !.env.example
+!justfile
 !/.sops.yaml
 !/apply-config.sh
 !/LICENSE
