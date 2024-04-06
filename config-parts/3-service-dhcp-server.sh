@@ -108,6 +108,8 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping nest-mini02 mac-address '20:1F:3B:9C:B9:11'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping broadlink01 ip-address '10.66.3.35'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping broadlink01 mac-address 'EC:0B:AE:9E:9C:6E'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping broadlink02 ip-address '10.66.3.36'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping broadlink02 mac-address 'EC:0B:AE:98:DB:47'
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 ip-address '10.66.3.41'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 mac-address 'C0:49:EF:D4:DB:D8'
