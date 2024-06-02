@@ -16,15 +16,10 @@ set system sysctl parameter kernel.pty.max value '24000'
 
 set system static-host-mapping host-name unifi inet 10.67.0.5
 
-# set system syslog file /home/vyos/log.txt facility kern level 'warning'
-# set system syslog file /home/vyos/log.txt archive size 512
-# set system syslog file /home/vyos/log.txt archive files 20
-
-# todo: send to k8s-vector and replace syslog file
-# set system syslog host 10.45.0.2 facility kern level 'warning'
-# set system syslog host 10.45.0.2 protocol 'tcp'
-# set system syslog host 10.45.0.2 port '6001'
-# set system syslog host 10.45.0.2 format 'octet-counted'
+set system syslog host 10.66.1.104 facility kern level 'warning'
+set system syslog host 10.66.1.104 protocol 'tcp'
+set system syslog host 10.66.1.104 port '6001'
+set system syslog host 10.66.1.104 format 'octet-counted'
 
 # set system task-scheduler task backup-config crontab-spec '30 0 * * *'
 # set system task-scheduler task backup-config executable path '/config/scripts/custom-config-backup.sh'
