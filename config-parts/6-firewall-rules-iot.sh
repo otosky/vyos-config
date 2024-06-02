@@ -90,6 +90,11 @@ set firewall name iot-servers rule 6 source group address-group 'nas_clients'
 # set firewall name iot-servers rule 10 destination port '6002'
 # set firewall name iot-servers rule 10 protocol 'tcp'
 # set firewall name iot-servers rule 10 source group address-group 'vector_journald_allowed'
+set firewall name iot-servers rule 10 action 'accept'
+set firewall name iot-servers rule 10 description 'Rule: accept_vector_syslog'
+set firewall name iot-servers rule 10 destination group address-group 'k8s_vector_aggregator'
+set firewall name iot-servers rule 10 destination port '6001'
+set firewall name iot-servers rule 10 protocol 'tcp'
 
 # From IOT to CONTAINERS
 set firewall name iot-containers default-action 'accept'
