@@ -71,12 +71,14 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 name-ser
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 range 0 start '10.66.2.200'
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 range 0 stop '10.66.2.254'
 
-set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel ip-address '10.66.2.21'
-set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel mac-address 'D6:21:9A:B3:6B:2E'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel5 ip-address '10.66.2.21'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel5 mac-address 'D6:21:9A:B3:6B:2E'
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-desktop ip-address '10.66.2.22'
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-desktop mac-address 'A8:A1:59:BD:E7:2F'
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-laptop ip-address '10.66.2.23'
 set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-laptop mac-address 'C4:BD:E5:1B:A6:48'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel9 ip-address '10.66.2.24'
+set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping oliver-pixel9 mac-address 'E8:D5:2B:58:FC:FD'
 
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop ip-address '10.66.2.31'
 # set service dhcp-server shared-network-name TRUSTED subnet 10.66.2.0/24 static-mapping emma-laptop mac-address
@@ -97,6 +99,8 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 range 0 stop
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping tubeszigbee ip-address '10.66.3.5'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping tubeszigbee mac-address 'E8:9F:6D:D1:10:07'
+
+# media
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping volumio01 ip-address '10.66.3.11'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping volumio01 mac-address 'B8:27:EB:78:B9:8A'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roku01 ip-address '10.66.3.21'
@@ -115,3 +119,6 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 ip-address '10.66.3.41'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 mac-address 'C0:49:EF:D4:DB:D8'
+
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roborock-marshmallow ip-address '10.66.3.51'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roborock-marshmallow mac-address 'B0:4A:39:C4:AB:DE'
