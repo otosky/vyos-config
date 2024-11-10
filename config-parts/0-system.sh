@@ -7,7 +7,7 @@ set system ipv6 disable-forwarding
 
 set system login user vyos authentication public-keys personal-desktop key 'AAAAC3NzaC1lZDI1NTE5AAAAIG8p0oPZzatlGw7Fxg5/ur4GJhARIl/isUl2BzmxKPzb'
 set system login user vyos authentication public-keys personal-desktop type 'ssh-ed25519'
-set system login user vyos authentication public-keys personal-laptop key 'AAAAC3NzaC1lZDI1NTE5AAAAIL2KquF27lDeth4UDF7A0cM/eLjRYsyq+kK24mUfhP6k'
+set system login user vyos authentication public-keys personal-laptop key 'AAAAC3NzaC1lZDI1NTE5AAAAILuYLhBEIuxfpFCKQL70vs7ND6axFrecFBUISY+fUjM2'
 set system login user vyos authentication public-keys personal-laptop type 'ssh-ed25519'
 
 set system name-server '1.1.1.1'
