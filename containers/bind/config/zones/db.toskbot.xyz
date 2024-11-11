@@ -18,6 +18,7 @@ $ORIGIN toskbot.xyz.
 
 ; LAN
 gateway                       IN  A  10.66.0.1
+wattbox                       IN  A  10.66.0.5
 brocade                       IN  A  10.66.0.11
 tplink                        IN  A  10.66.0.21
 
