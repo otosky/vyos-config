@@ -6,7 +6,7 @@ set firewall state-policy invalid action 'drop'
 set firewall state-policy related action 'accept'
 
 # Address Groups
-set firewall group address-group jellyfin_clients address '10.66.3.21'
+set firewall group address-group jellyfin_clients address '10.66.3.21-10.66.3.29'
 set firewall group address-group nas_clients address '10.66.3.11'
 
 # Uptime Robot
