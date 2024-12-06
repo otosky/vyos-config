@@ -105,6 +105,8 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping volumio01 mac-address 'B8:27:EB:78:B9:8A'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roku01 ip-address '10.66.3.21'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roku01 mac-address 'BC:D7:D4:32:F9:2A'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping shield01 ip-address '10.66.3.25'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping shield01 mac-address '3C:6D:66:12:87:93'
 # set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping nintendo-switch ip-address '10.66.3.22'
 # set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping nintendo-switch mac-address
 
