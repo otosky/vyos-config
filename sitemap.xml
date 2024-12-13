@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://otosky.github.io/vyos-config/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-13</lastmod>
     </url>
     <url>
          <loc>https://otosky.github.io/vyos-config/quickstart/setup/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-13</lastmod>
     </url>
     <url>
          <loc>https://otosky.github.io/vyos-config/quickstart/updating_router_config/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-13</lastmod>
     </url>
 </urlset>
