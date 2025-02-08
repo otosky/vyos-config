@@ -8,6 +8,7 @@ set firewall state-policy related action 'accept'
 # Address Groups
 set firewall group address-group jellyfin_clients address '10.66.3.21-10.66.3.29'
 set firewall group address-group nas_clients address '10.66.3.11'
+set firewall group address-group mqtt_clients address '10.66.3.11'
 
 # Uptime Robot
 set firewall group address-group uptime_robot_whitelist address '69.162.124.224-69.162.124.238'
@@ -40,6 +41,7 @@ set firewall group address-group k8s_hass address '10.66.1.102'
 set firewall group address-group k8s_jellyfin address '10.66.1.103'
 set firewall group address-group k8s_vector_aggregator address '10.66.1.104'
 set firewall group address-group k8s_syncthing address '10.66.1.106'
+set firewall group address-group k8s_mqtt address '10.66.1.108'
 
 set firewall group address-group nas address '10.66.1.21'
 

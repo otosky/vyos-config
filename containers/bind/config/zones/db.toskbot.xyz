@@ -33,6 +33,7 @@ kube-server01                 IN  A  10.66.1.41
 kube-server02                 IN  A  10.66.1.42
 kube-server03                 IN  A  10.66.1.43
 vector                        IN  A  10.66.1.104
+mqtt                          IN  A  10.66.1.108
 
 ; IOT
 volumio                       IN  A  10.66.3.11
