@@ -123,6 +123,8 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 ip-address '10.66.3.41'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-presence01 mac-address 'C0:49:EF:D4:DB:D8'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-ha-voice01 ip-address '10.66.3.45'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-ha-voice01 mac-address '20:F8:3B:09:06:40'
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roborock-marshmallow ip-address '10.66.3.51'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roborock-marshmallow mac-address 'B0:4A:39:C4:AB:DE'
