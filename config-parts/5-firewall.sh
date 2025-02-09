@@ -33,6 +33,7 @@ set firewall group address-group k8s_ingress_allowed address '10.66.3.32'
 set firewall group address-group k8s_ingress_allowed address '10.66.3.35'
 set firewall group address-group k8s_ingress_allowed address '10.66.3.36'
 set firewall group address-group k8s_ingress_allowed address '10.66.3.41'
+set firewall group address-group k8s_ingress_allowed address '10.66.3.45'
 
 ## K8s services
 # set firewall group network-group k8s_services network '10.66.0.0/16'
