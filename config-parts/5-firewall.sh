@@ -8,7 +8,7 @@ set firewall state-policy related action 'accept'
 # Address Groups
 set firewall group address-group jellyfin_clients address '10.66.3.21-10.66.3.29'
 set firewall group address-group nas_clients address '10.66.3.11'
-set firewall group address-group mqtt_clients address '10.66.3.11'
+set firewall group address-group mqtt_clients address '10.66.3.11' # todo fixme when capibridge works
 
 # Uptime Robot
 set firewall group address-group uptime_robot_whitelist address '69.162.124.224-69.162.124.238'
@@ -55,6 +55,8 @@ set firewall group address-group cast_speakers address '10.66.3.32'
 
 set firewall group address-group ssdp_sources address '10.66.3.11'
 set firewall group address-group ssdp_sources address '10.66.3.21'
+
+set firewall group address-group voice_assistants address '10.66.3.45'
 
 ## VyOS
 set firewall group address-group vyos_dnsdist address '10.67.0.3'
