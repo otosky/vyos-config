@@ -8,7 +8,7 @@ set firewall state-policy related action 'accept'
 # Address Groups
 set firewall group address-group jellyfin_clients address '10.66.3.21-10.66.3.29'
 set firewall group address-group nas_clients address '10.66.3.11'
-set firewall group address-group mqtt_clients address '10.66.3.11' # todo fixme when capibridge works
+set firewall group address-group mqtt_clients address '10.66.3.60'
 
 # Uptime Robot
 set firewall group address-group uptime_robot_whitelist address '69.162.124.224-69.162.124.238'

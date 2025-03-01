@@ -128,3 +128,6 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roborock-marshmallow ip-address '10.66.3.51'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping roborock-marshmallow mac-address 'B0:4A:39:C4:AB:DE'
+
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-capibridge ip-address '10.66.3.60'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-capibridge mac-address 'E4:B0:63:07:8D:20'
