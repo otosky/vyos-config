@@ -23,7 +23,7 @@ set container name dnsdist network containers address '10.67.0.3'
 set container name dnsdist image 'docker.io/powerdns/dnsdist-18:1.8.0'
 set container name dnsdist arguments '--log-timestamps'
 set container name dnsdist cap-add 'net-bind-service'
-set container name dnsdist environment TZ value 'America/New_York'
+set container name dnsdist environment TZ value 'America/Los_Angeles'
 set container name dnsdist memory '0'
 set container name dnsdist restart 'on-failure'
 set container name dnsdist shared-memory '0'
@@ -46,7 +46,7 @@ set container name cloudflare-ddns allow-host-networks
 set container name cloudflare-ddns environment CF_API_TOKEN value "${SECRET_CLOUDFLARE_DYNDNS_TOKEN}"
 set container name cloudflare-ddns environment DOMAINS value "${SECRET_CLOUDFLARE_DOMAINS}"
 set container name cloudflare-ddns environment IP6_PROVIDER value "none"
-set container name cloudflare-ddns environment TZ value 'America/New_York'
+set container name cloudflare-ddns environment TZ value 'America/Los_Angeles'
 set container name cloudflare-ddns image 'docker.io/favonia/cloudflare-ddns:1.15.0'
 set container name cloudflare-ddns memory '0'
 set container name cloudflare-ddns restart 'on-failure'
@@ -82,7 +82,7 @@ set container name udp-broadcast-relay-volumio shared-memory '0'
 set container name unifi cap-add net-bind-service
 set container name unifi network containers address '10.67.0.5'
 set container name unifi environment RUNAS_UID0 value 'false'
-set container name unifi environment TZ value 'America/New_York'
+set container name unifi environment TZ value 'America/Los_Angeles'
 set container name unifi environment UNIFI_UID value '999'
 set container name unifi environment UNIFI_GID value '999'
 set container name unifi environment UNIFI_STDOUT value 'true'

@@ -22,4 +22,4 @@ set system syslog host 10.66.1.104 format 'octet-counted'
 # set system task-scheduler task backup-config crontab-spec '30 0 * * *'
 # set system task-scheduler task backup-config executable path '/config/scripts/custom-config-backup.sh'
 
-set system time-zone 'America/New_York'
+set system time-zone 'America/Los_Angeles'
