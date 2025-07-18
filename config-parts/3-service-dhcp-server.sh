@@ -45,7 +45,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 range 0 
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 range 0 stop '10.66.1.254'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas01 ip-address '10.66.1.21'
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas01 mac-address '70:85:C2:66:EA:81'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas01 mac-address 'E4:1D:2D:DD:6A:10'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas02 ip-address '10.66.1.22'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas02 mac-address '48:4D:7E:B0:0F:4C'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping truenas01 ip-address '10.66.1.23'
