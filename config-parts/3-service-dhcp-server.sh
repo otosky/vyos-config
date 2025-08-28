@@ -102,7 +102,7 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 range 0 star
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 range 0 stop '10.66.3.254'
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping tubeszigbee ip-address '10.66.3.5'
-set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping tubeszigbee mac-address 'E8:9F:6D:D1:10:07'
+set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping tubeszigbee mac-address 'FC:E8:C0:F8:6F:1F'
 
 # media
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping volumio01 ip-address '10.66.3.11'
