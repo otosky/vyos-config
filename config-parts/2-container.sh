@@ -20,7 +20,7 @@ set container name bind restart 'on-failure'
 
 # dnsdist
 set container name dnsdist network containers address '10.67.0.3'
-set container name dnsdist image 'docker.io/powerdns/dnsdist-18:1.8.0'
+set container name dnsdist image 'docker.io/powerdns/dnsdist-19:1.9.10'
 set container name dnsdist arguments '--log-timestamps'
 set container name dnsdist cap-add 'net-bind-service'
 set container name dnsdist environment TZ value 'America/Los_Angeles'
