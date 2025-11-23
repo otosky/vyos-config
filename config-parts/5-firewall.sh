@@ -27,6 +27,7 @@ set firewall group address-group k8s_api address '10.5.0.2'
 set firewall group address-group k8s_nodes address '10.66.1.41'
 set firewall group address-group k8s_nodes address '10.66.1.42'
 set firewall group address-group k8s_nodes address '10.66.1.43'
+set firewall group address-group k8s_nodes address '10.66.1.44'
 
 set firewall group address-group k8s_ingress_allowed address '10.66.3.11'
 set firewall group address-group k8s_ingress_allowed address '10.66.3.31'
