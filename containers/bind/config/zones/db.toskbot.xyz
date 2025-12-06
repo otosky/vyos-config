@@ -38,7 +38,6 @@ mqtt                          IN  A  10.66.1.108
 
 ; IOT
 volumio                       IN  A  10.66.3.11
-roku                          IN  A  10.66.3.21
 
 ; Containers
 cluster-0                     IN  A  10.67.0.4
