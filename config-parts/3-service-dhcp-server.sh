@@ -138,3 +138,5 @@ set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mappi
 
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-capibridge ip-address '10.66.3.60'
 set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping esp-capibridge mac-address 'E4:B0:63:07:8D:20'
+
+# set service dhcp-server shared-network-name IOT subnet 10.66.3.0/24 static-mapping samsung-flip5-kiosk ip-address '10.66.3.80'

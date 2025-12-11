@@ -60,6 +60,8 @@ set firewall group address-group ssdp_sources address '10.66.3.21'
 
 set firewall group address-group voice_assistants address '10.66.3.45'
 
+set firewall group address-group ha_kiosk address '10.66.3.80'
+
 ## VyOS
 set firewall group address-group vyos_dnsdist address '10.67.0.3'
 
