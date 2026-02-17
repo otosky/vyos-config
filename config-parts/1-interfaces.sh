@@ -34,5 +34,8 @@ set interfaces wireguard wg01 peer oliver-pixel5 public-key 'y41/A4zqAqzr9KHKEkM
 set interfaces wireguard wg01 peer oliver-pixel9 allowed-ips '10.66.5.4/32'
 set interfaces wireguard wg01 peer oliver-pixel9 persistent-keepalive '15'
 set interfaces wireguard wg01 peer oliver-pixel9 public-key 'A3bNqkt5Ys6QNuPHzNc8tX9+x+j0WO0Wp57ZOVKHvFQ='
+set interfaces wireguard wg01 peer glinet allowed-ips '10.66.5.5/32'
+set interfaces wireguard wg01 peer glinet persistent-keepalive '15'
+set interfaces wireguard wg01 peer glinet public-key 'YIpwyQG+9PFMmVjdAJNJrpTYenj5u5VJPq8bvu+ldFs='
 set interfaces wireguard wg01 port '51820'
 set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
