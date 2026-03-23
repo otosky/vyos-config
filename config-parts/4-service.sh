@@ -14,9 +14,8 @@ set service ssh disable-password-authentication
 set service ssh port '22'
 
 # Dynamic DNS (Cloudflare)
-set service dns dynamic name cloudflare address interface 'eth0'
-set service dns dynamic name cloudflare protocol 'cloudflare'
-set service dns dynamic name cloudflare zone "${SECRET_CLOUDFLARE_DOMAINS}"
-set service dns dynamic name cloudflare host-name "${SECRET_CLOUDFLARE_DOMAINS}"
-set service dns dynamic name cloudflare username 'token'
-set service dns dynamic name cloudflare password "${SECRET_CLOUDFLARE_DYNDNS_TOKEN}"
+set service dns dynamic interface eth0 service cloudflare protocol 'cloudflare'
+set service dns dynamic interface eth0 service cloudflare zone "${SECRET_CLOUDFLARE_DOMAINS}"
+set service dns dynamic interface eth0 service cloudflare host-name "${SECRET_CLOUDFLARE_DOMAINS}"
+set service dns dynamic interface eth0 service cloudflare login 'token'
+set service dns dynamic interface eth0 service cloudflare password "${SECRET_CLOUDFLARE_DYNDNS_TOKEN}"
