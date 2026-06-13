@@ -21,8 +21,11 @@ set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 name-server 
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 range 0 start '10.66.0.200'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 range 0 stop '10.66.0.254'
 
-set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping wattbox ip-address '10.66.0.5'
-set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping wattbox mac-address 'D4:6A:91:04:2D:E4'
+set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping crs326 ip-address '10.66.0.2'
+set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping crs326 mac-address 'D0:EA:11:60:48:F2'
+set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping crs317 ip-address '10.66.0.3'
+set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping crs317 mac-address 'D0:EA:11:5D:97:F2'
+
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping dl-power ip-address '10.66.0.6'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping dl-power mac-address '7C:E1:FF:02:FD:D8'
 set service dhcp-server shared-network-name LAN subnet 10.66.0.0/24 static-mapping switch01 ip-address '10.66.0.11'
