@@ -49,7 +49,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-m
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas02 ip-address '10.66.1.22'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping nas02 mac-address '48:4D:7E:B0:0F:4C'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping truenas01 ip-address '10.66.1.23'
-set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping truenas01 mac-address '3C:EC:EF:29:49:5C'
+set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping truenas01 mac-address '50:6B:4B:42:96:1C'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master01 ip-address '10.66.1.31'
 set service dhcp-server shared-network-name SERVERS subnet 10.66.1.0/24 static-mapping kube-master01 mac-address '98:fa:9b:98:09:91'
